@@ -1,496 +1,325 @@
 <!DOCTYPE html>
-<html lang="es">
 
+<html lang="es">
 <head>
 <meta charset="UTF-8">
-<title>Mi Aplicación con Gemini AI</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Asistente de Apoyo para Autismo</title>
 
 <style>
 
 body{
 font-family: Arial, sans-serif;
-background:#f4f6f9;
 margin:0;
-padding:0;
+background:#f5f7fa;
+color:#333;
 }
 
 header{
-background:#1a73e8;
+background:#2a7de1;
 color:white;
-padding:20px;
+padding:30px;
 text-align:center;
 }
 
 nav{
-background:#ffffff;
+background:#1e5fb3;
 padding:10px;
 text-align:center;
-box-shadow:0 2px 5px rgba(0,0,0,0.1);
 }
 
 nav a{
+color:white;
 margin:10px;
 text-decoration:none;
-color:#1a73e8;
 font-weight:bold;
 }
 
-.container{
+section{
 max-width:900px;
 margin:auto;
-padding:20px;
-}
-
-.app-box{
 background:white;
-padding:25px;
-border-radius:10px;
-box-shadow:0 5px 10px rgba(0,0,0,0.1);
-}
-
-input{
-width:100%;
-padding:12px;
-margin-top:10px;
-border-radius:6px;
-border:1px solid #ccc;
-}
-
-button{
-margin-top:10px;
-padding:12px;
-background:#1a73e8;
-color:white;
-border:none;
-border-radius:6px;
-cursor:pointer;
-}
-
-button:hover{
-background:#155ac4;
-}
-
-.response{
+padding:30px;
 margin-top:20px;
-background:#f1f3f4;
-padding:15px;
-border-radius:6px;
+border-radius:8px;
+box-shadow:0 2px 10px rgba(0,0,0,0.1);
 }
 
-.section{
-margin-top:60px;
-background:white;
-padding:25px;
-border-radius:10px;
-box-shadow:0 5px 10px rgba(0,0,0,0.1);
+h1,h2,h3{
+color:#2a7de1;
 }
 
 footer{
-margin-top:40px;
-padding:20px;
 text-align:center;
+padding:30px;
+margin-top:40px;
 background:#eee;
 }
 
 </style>
+
 </head>
 
 <body>
 
 <header>
-<h1>Mi Aplicación de Inteligencia Artificial</h1>
-<p>Powered by Gemini AI</p>
+
+<h1>Asistente de Apoyo para Autismo</h1>
+
+<p>
+Aplicación educativa diseñada para ayudar a comprender el autismo y brindar
+estrategias de apoyo para padres, cuidadores y profesionales.
+</p>
+
 </header>
 
 <nav>
-<a href="#app">Aplicación</a>
-<a href="#terminos">Términos</a>
-<a href="#privacidad">Privacidad</a>
-<a href="#contacto">Contacto</a>
+
+<a href="#inicio">Inicio</a> <a href="#privacidad">Política de Privacidad</a> <a href="#terminos">Condiciones del Servicio</a> <a href="#contacto">Contacto</a>
+
 </nav>
 
-<div class="container">
+<section id="inicio">
 
-<!-- APP -->
-
-<div id="app" class="app-box">
-
-<h2>Pregúntale a la IA</h2>
-
-<input id="pregunta" type="text" placeholder="Escribe tu pregunta...">
-
-<button onclick="preguntar()">Enviar</button>
-
-<div id="respuesta" class="response"></div>
-
-</div>
-
-
-<!-- TERMINOS -->
-
-<div id="terminos" class="section">
-
-<h2>Términos de Uso</h2>
+<h2>Sobre la Aplicación</h2>
 
 <p>
-# Condiciones del Servicio
-
-**Aplicación: Asistente de Apoyo para Autismo**
-
-Última actualización: 2026
-
-## 1. Aceptación de los términos
-
-Al utilizar la aplicación **Asistente de Apoyo para Autismo**, aceptas cumplir con estas Condiciones del Servicio. Si no estás de acuerdo con alguna parte de estos términos, se recomienda no utilizar la aplicación.
-
-## 2. Descripción del servicio
-
-La aplicación **Asistente de Apoyo para Autismo** proporciona información, herramientas educativas y recursos de apoyo relacionados con el autismo y el desarrollo infantil.
-
-El contenido ofrecido tiene fines **informativos, educativos y de apoyo**, y **no reemplaza el diagnóstico, tratamiento o asesoramiento de profesionales de la salud o educación especializados**.
-
-## 3. Uso adecuado de la aplicación
-
-El usuario se compromete a utilizar la aplicación de manera responsable y a no:
-
-* Utilizar la aplicación con fines ilegales.
-* Intentar acceder de forma no autorizada a los sistemas de la aplicación.
-* Alterar, copiar o distribuir el contenido de la aplicación sin permiso.
-* Usar la aplicación para dañar, acosar o afectar a otras personas.
-
-## 4. Cuentas y acceso mediante Google
-
-La aplicación puede permitir el acceso utilizando servicios de autenticación de **Google** mediante tecnología OAuth.
-
-Al iniciar sesión mediante Google:
-
-* El usuario autoriza el acceso a información básica del perfil (por ejemplo nombre y correo electrónico).
-* Esta información se utiliza únicamente para permitir el funcionamiento de la aplicación.
-
-La aplicación **no publica información en nombre del usuario ni accede a datos sensibles**.
-
-## 5. Propiedad intelectual
-
-Todo el contenido de la aplicación, incluyendo:
-
-* textos
-* gráficos
-* logotipos
-* diseño de la aplicación
-
-pertenece a **Asistente de Apoyo para Autismo** o a sus respectivos propietarios y está protegido por leyes de propiedad intelectual.
-
-No está permitido reproducir o redistribuir el contenido sin autorización.
-
-## 6. Limitación de responsabilidad
-
-La información proporcionada por la aplicación es de carácter educativo.
-
-Los desarrolladores de la aplicación **no se hacen responsables por decisiones tomadas por los usuarios basadas en la información proporcionada**.
-
-Para diagnósticos o tratamientos se recomienda consultar con profesionales de salud o educación especializados.
-
-## 7. Disponibilidad del servicio
-
-La aplicación se proporciona "tal cual" y puede ser modificada, actualizada o suspendida en cualquier momento sin previo aviso.
-
-No se garantiza que la aplicación esté disponible de forma continua o libre de errores.
-
-## 8. Privacidad
-
-El uso de la aplicación también está sujeto a la **Política de Privacidad**, que describe cómo se recopila, utiliza y protege la información del usuario.
-
-## 9. Cambios en las condiciones
-
-Estas Condiciones del Servicio pueden actualizarse ocasionalmente para reflejar cambios en la aplicación o en las políticas legales.
-
-Se recomienda a los usuarios revisar esta página periódicamente.
-
-## 10. Contacto
-
-Si tienes preguntas sobre estas Condiciones del Servicio, puedes contactar a través de:
-
-Correo electrónico:
-**Carloscanaza13@gmail.com**
-
-O mediante la página oficial de Facebook de la aplicación.
-
+<strong>Asistente de Apoyo para Autismo</strong> es una aplicación educativa
+que ofrece información y herramientas diseñadas para apoyar la comprensión del
+autismo.
 </p>
 
-</div>
+<p>
+La aplicación incluye:
+</p>
 
+<ul>
 
-<!-- PRIVACIDAD -->
+<li>Un asistente basado en inteligencia artificial que responde preguntas sobre autismo.</li>
 
-<div id="privacidad" class="section">
+<li>Contenido educativo para comprender conductas frecuentes.</li>
+
+<li>Generador de estrategias de apoyo para padres, docentes y profesionales.</li>
+
+</ul>
+
+<p>
+La aplicación tiene fines educativos y de apoyo, y no reemplaza el diagnóstico
+ni la intervención de profesionales de salud o educación especializados.
+</p>
+
+</section>
+
+<section id="privacidad">
 
 <h2>Política de Privacidad</h2>
 
+<h3>Aplicación: Asistente de Apoyo para Autismo</h3>
+
+<p><strong>Última actualización: 2026</strong></p>
+
+<h3>1. Introducción</h3>
+
 <p>
-# Política de Privacidad
-
-**Aplicación: Asistente de Apoyo para Autismo**
-Última actualización: 2026
-
----
-
-# 1. Introducción
-
-La aplicación **Asistente de Apoyo para Autismo** respeta y protege la privacidad de sus usuarios. Esta Política de Privacidad explica qué información se recopila, cómo se utiliza y cómo se protege cuando los usuarios utilizan la aplicación.
-
-Al utilizar la aplicación, usted acepta las prácticas descritas en esta política.
-
----
-
-# 2. Finalidad de la aplicación
-
-La aplicación tiene como objetivo brindar **información educativa y estrategias de apo o relacionadas con el autismo**, incluyendo:
-
-* Un asistente basado en inteligencia artificial que responde preguntas sobre autismo.
-* Una sección educativa para comprender conductas frecuentes en personas con autismo.
-* Un generador de estrategias para padres, cuidadores y profesionales.
-
-La información proporcionada por la aplicación es **exclusivamente educativa** y **no sustituye el diagnóstico, evaluación o tratamiento realizado por profesionales de la salud, psicólogos, médicos o especialistas en desarrollo infantil**.
-
----
-
-# 3. Información que recopilamos
-
-La aplicación puede recopilar los siguientes tipos de información:
-
-## 3.1 Información proporcionada por el usuario
-
-Cuando el usuario interactúa con el asistente o utiliza las funciones de la aplicación, pueden registrarse:
-
-* preguntas o consultas realizadas al asistente
-* selecciones dentro de las secciones educativas
-* estrategias generadas dentro de la aplicación
-
-Esta información se utiliza únicamente para mejorar el funcionamiento del sistema y la calidad de las respuestas ofrecidas por la aplicación.
-
-## 3.2 Información técnica
-
-Para mejorar la estabilidad y funcionamiento de la aplicación, pueden recopilarse datos técnicos básicos como:
-
-* tipo de dispositivo
-* sistema operativo
-* versión de la aplicación
-* datos de uso anónimos
-* registros de errores técnicos
-
-Esta información se utiliza únicamente con fines de mejora técnica y seguridad del sistema.
-
----
-
-# 4. Uso de inteligencia artificial
-
-La aplicación utiliza **sistemas de inteligencia artificial** para generar respuestas educativas relacionadas con el autismo y estrategias de apoyo.
-
-Las respuestas generadas por inteligencia artificial:
-
-* se producen de forma automática
-* pueden contener información general
-* pueden presentar imprecisiones ocasionales
-* no constituyen diagnóstico médico ni psicológico
-
-Por esta razón, la información proporcionada por la aplicación debe considerarse **orientación educativa** y **no reemplaza la consulta con profesionales especializados**.
-
----
-
-# 5. Uso de los datos
-
-La información recopilada puede utilizarse para:
-
-* mejorar la calidad de las respuestas del asistente
-* optimizar el funcionamiento de la aplicación
-* corregir errores técnicos
-* mejorar la experiencia del usuario
-* desarrollar mejoras futuras en el sistema educativo de la aplicación
-
-La aplicación **no vende, alquila ni comercializa información personal de los usuarios**.
-
----
-
-# 6. Almacenamiento y seguridad de los datos
-
-Los datos pueden almacenarse en **infraestructura tecnológica segura en la nube**, incluyendo servicios de almacenamiento o procesamiento proporcionados por proveedores de tecnología.
-
-Esto puede incluir el uso de **servicios de infraestructura en la nube como Google Cloud u otros proveedores tecnológicos**, únicamente con el propósito de permitir el funcionamiento técnico de la aplicación.
-
-Se implementan medidas razonables de seguridad para proteger la información contra:
-
-* acceso no autorizado
-* pérdida de datos
-* alteración de información
-* uso indebido de los datos
-
----
-
-# 7. Compartición de información
-
-La aplicación **no comparte información personal con terceros**, excepto cuando sea estrictamente necesario para el funcionamiento técnico del servicio.
-
-En algunos casos, puede utilizarse infraestructura tecnológica de proveedores externos (como servicios en la nube o plataformas de desarrollo), quienes deben cumplir estándares adecuados de seguridad y protección de datos.
-
-La información **no se vende ni se comparte con plataformas de publicidad ni con intermediarios de datos**.
-
----
-
-# 8. Privacidad de menores
-
-La aplicación está diseñada para ser utilizada por:
-
-* padres
-* cuidadores
-* docentes
-* profesionales de la educación o salud
-
-que buscan **información educativa sobre el autismo**.
-
-La aplicación **no recopila intencionalmente información personal de menores de edad**.
-
-Si algún usuario considera que se ha recopilado información de un menor sin autorización, puede solicitar la eliminación de dichos datos mediante los medios de contacto indicados en esta política.
-
----
-
-# 9. Uso responsable de los datos
-
-La información recopilada a través de la aplicación:
-
-* **no se utiliza para publicidad personalizada**
-* **no se vende a terceros**
-* **no se utiliza para perfilado comercial**
-* **no se comparte con plataformas de publicidad ni redes de anuncios**
-
-El uso de los datos se limita exclusivamente a las funciones educativas, técnicas y de mejora del servicio de la aplicación.
-
----
-
-# 10. Derechos del usuario
-
-Los usuarios pueden solicitar en cualquier momento:
-
-* información sobre los datos asociados a su uso de la aplicación
-* la corrección de información incorrecta
-* la eliminación de datos cuando sea posible
-
-Las solicitudes pueden realizarse a través del correo de contacto indicado en esta política.
-
----
-
-# 11. Retención de datos
-
-Las consultas realizadas dentro del asistente o las interacciones con la aplicación pueden almacenarse **de forma temporal** con el fin de mejorar el funcionamiento del sistema.
-
-Cuando los datos dejan de ser necesarios para el funcionamiento o mejora del servicio, pueden ser:
-
-* eliminados periódicamente
-* anonimizados
-* utilizados únicamente con fines estadísticos internos.
-
----
-
-# 12. Cambios en la política de privacidad
-
-Esta Política de Privacidad puede actualizarse ocasionalmente para reflejar:
-
-* mejoras en la aplicación
-* cambios en las funcionalidades del servicio
-* modificaciones en la normativa de privacidad o seguridad
-
-Cuando se realicen cambios importantes, estos podrán indicarse dentro de la aplicación o en la página oficial del proyecto.
-
----
-
-# 13. Contacto
-
-Si tiene preguntas sobre esta Política de Privacidad o sobre el funcionamiento de la aplicación, puede comunicarse mediante:
-
-Correo electrónico:
-**[Carloscanaza13@gmail.com]**
-
----
-
-**Asistente de Apoyo para Autismo** se compromete a utilizar la tecnología de manera responsable para promover la comprensión del autismo y ofrecer herramientas educativas de apoyo para familias, cuidadores y profesionales.
+La aplicación <strong>Asistente de Apoyo para Autismo</strong> respeta y protege la privacidad de sus usuarios.
+Esta Política de Privacidad explica qué información se recopila, cómo se utiliza
+y cómo se protege cuando los usuarios utilizan la aplicación.
 </p>
 
-</div>
+<p>
+Al utilizar la aplicación, usted acepta las prácticas descritas en esta política.
+</p>
 
+<h3>2. Finalidad de la aplicación</h3>
 
-<!-- CONTACTO -->
+<p>
+La aplicación tiene como objetivo brindar información educativa y estrategias de apoyo
+relacionadas con el autismo.
+</p>
 
-<div id="contacto" class="section">
+<ul>
+
+<li>Un asistente basado en inteligencia artificial que responde preguntas.</li>
+<li>Una sección educativa para comprender conductas.</li>
+<li>Un generador de estrategias para padres y profesionales.</li>
+
+</ul>
+
+<p>
+La información proporcionada es exclusivamente educativa y no sustituye
+diagnósticos ni tratamiento profesional.
+</p>
+
+<h3>3. Información que recopilamos</h3>
+
+<p>
+La aplicación puede registrar preguntas realizadas al asistente, uso de secciones
+educativas y datos técnicos como tipo de dispositivo o versión de la aplicación.
+</p>
+
+<p>
+Estos datos se utilizan únicamente para mejorar el funcionamiento del sistema.
+</p>
+
+<h3>4. Uso de inteligencia artificial</h3>
+
+<p>
+La aplicación utiliza sistemas de inteligencia artificial para generar respuestas
+educativas relacionadas con el autismo.
+</p>
+
+<p>
+Las respuestas son automáticas y pueden contener imprecisiones ocasionales.
+</p>
+
+<h3>5. Uso de los datos</h3>
+
+<p>
+La información recopilada se utiliza para mejorar el funcionamiento de la aplicación,
+corregir errores y optimizar la experiencia del usuario.
+</p>
+
+<p>
+La aplicación no vende ni comercializa información personal.
+</p>
+
+<h3>6. Almacenamiento y seguridad</h3>
+
+<p>
+Los datos pueden almacenarse en infraestructura segura en la nube, incluyendo
+servicios como Google Cloud u otros proveedores tecnológicos.
+</p>
+
+<h3>7. Compartición de información</h3>
+
+<p>
+La aplicación no comparte información personal con terceros, excepto cuando sea
+necesario para el funcionamiento técnico del servicio.
+</p>
+
+<h3>8. Privacidad de menores</h3>
+
+<p>
+La aplicación está dirigida a padres, cuidadores, docentes y profesionales
+interesados en información educativa sobre autismo.
+</p>
+
+<p>
+No se recopila intencionalmente información personal de menores.
+</p>
+
+<h3>9. Derechos del usuario</h3>
+
+<p>
+Los usuarios pueden solicitar información o eliminación de datos mediante el
+correo de contacto indicado.
+</p>
+
+<h3>10. Cambios en la política</h3>
+
+<p>
+Esta política puede actualizarse ocasionalmente para reflejar mejoras en la
+aplicación o cambios normativos.
+</p>
+
+</section>
+
+<section id="terminos">
+
+<h2>Condiciones del Servicio</h2>
+
+<p><strong>Última actualización: 2026</strong></p>
+
+<h3>1. Aceptación de los términos</h3>
+
+<p>
+Al utilizar la aplicación aceptas cumplir con estas Condiciones del Servicio.
+</p>
+
+<h3>2. Descripción del servicio</h3>
+
+<p>
+La aplicación proporciona información educativa y estrategias de apoyo
+relacionadas con el autismo y el desarrollo infantil.
+</p>
+
+<p>
+El contenido no reemplaza diagnóstico ni tratamiento profesional.
+</p>
+
+<h3>3. Uso adecuado</h3>
+
+<ul>
+
+<li>No utilizar la aplicación con fines ilegales.</li>
+<li>No intentar acceder sin autorización a sistemas.</li>
+<li>No alterar ni redistribuir el contenido.</li>
+
+</ul>
+
+<h3>4. Acceso mediante Google</h3>
+
+<p>
+La aplicación puede permitir autenticación mediante servicios de Google
+utilizando tecnología OAuth.
+</p>
+
+<p>
+Solo se accede a información básica como nombre o correo electrónico.
+</p>
+
+<h3>5. Propiedad intelectual</h3>
+
+<p>
+El contenido de la aplicación está protegido por derechos de propiedad intelectual.
+</p>
+
+<h3>6. Limitación de responsabilidad</h3>
+
+<p>
+La información proporcionada es educativa y no sustituye atención profesional.
+</p>
+
+<h3>7. Disponibilidad del servicio</h3>
+
+<p>
+La aplicación puede modificarse o actualizarse sin previo aviso.
+</p>
+
+</section>
+
+<section id="contacto">
 
 <h2>Contacto</h2>
 
-<p>Email: carloscanaza13@gmail.com</p>
+<p>
+Si tienes preguntas sobre la aplicación, la política de privacidad o las condiciones
+del servicio, puedes comunicarte mediante:
+</p>
 
-</div>
+<p>
 
-</div>
+<strong>Email:</strong><br>
+[Carloscanaza13@gmail.com]
+
+</p>
+
+<p>
+
+También puedes visitar la página oficial del proyecto en Facebook.
+
+</p>
+
+</section>
 
 <footer>
 
-© 2026 Mi Aplicación de IA
+<p>
+© 2026 Asistente de Apoyo para Autismo
+</p>
 
 </footer>
-
-<script>
-
-/* -------------------------
-AIzaSyB1Qh36p5vU8w9MURwL8dilcEPbPQ7_4ogI
-------------------------- */
-
-const API_KEY = "AIzaSyB1Qh36p5vU8w9MURwL8dilcEPbPQ7_4og";
-
-/* -------------------------
-FUNCION DE GEMINI
-------------------------- */
-
-async function preguntar(){
-
-let pregunta = document.getElementById("pregunta").value;
-
-document.getElementById("respuesta").innerText="Pensando...";
-
-try{
-
-let respuesta = await fetch(
-"https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key="+API_KEY,
-{
-method:"POST",
-headers:{
-"Content-Type":"application/json"
-},
-body:JSON.stringify({
-contents:[
-{
-parts:[
-{
-text:pregunta
-}
-]
-}
-]
-})
-}
-);
-
-let data = await respuesta.json();
-
-let texto=data.candidates[0].content.parts[0].text;
-
-document.getElementById("respuesta").innerText=texto;
-
-}catch(error){
-
-document.getElementById("respuesta").innerText="Error al conectar con la IA.";
-
-}
-
-}
-
-</script>
 
 </body>
 </html>
